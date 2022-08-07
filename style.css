@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline:none;
+    font-family: sans-serif;
+}
+html{
+    width:100%;
+    height:100%;
+    font-size: 63%;
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden !important ;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0);
+  padding-left: var(--bs-gutter-x, 0);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid{
+padding-right: 0 !important;
+padding-left: 0 !important;
+}
+.main-section{
+    display: flex;
+    width:auto;
+    height:73vh;
+    background: url(img/LaBanner2.png) no-repeat;
+    background-size: cover;
+}
+.logo{
+position:absolute;
+left:20%;
+top: 1rem;
+transition: transform 0.5s;
+}
+
+.navbar{
+    top: 1rem;
+    position: absolute !important;
+    right: 60%;
+}
+.item{
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    transition: transform 0.5s;
+    margin: 0 3rem;
+    color:white;
+    text-decoration: none;
+    justify-content: space-evenly;
+    letter-spacing: 0.1rem;
+
+}
