@@ -72,3 +72,136 @@ transition: transform 0.5s;
     letter-spacing: 0.1rem;
 
 }
+logo:hover,
+item:hover
+{
+    transform:scale (1.2);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+
+
+
+.sticky-nav
+{
+    height: 7rem;
+    width:100%;
+    position: relative;
+    display: flex;
+    background-color:cadetblue;
+}
+.logo2
+{
+    position: absolute;
+    top: 1rem;
+    transition:0.5s;
+    left:20%;
+
+}
+.item2
+{
+    justify-content: space-evenly;
+    display: inline-block;
+    font-weight: 600;
+    transition: transform 0.5s;
+    border-bottom: 1px solid white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1 rem;
+    margin: 0 3rem;
+    text-decoration: none;
+    
+}
+.logo2:hover, .item2:hover
+{
+transform: scale (1,2);
+color: #414f6b;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.section-2
+{
+    width:100%;
+    height:73vh;
+    background: url(img/Bg.png)no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+.history-text-section{
+    width:62%;
+
+}
+.history{
+margin-top: 5rem;
+}
+.history-text
+{
+    flex-direction: column;
+    width:94%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    left:10%;
+    margin-left: 6 rem;
+}
+.one
+{
+    left:20%;
+}
+
+.carousel-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(65, 79, 107, 0.85);
+    bottom: 0;
+    padding: 3rem;
+  }
+  
+  .carousel-item a {
+    cursor: default;
+  }
+  
+  .thumb-container {
+    position: relative;
+    width: 67%;
+  }
+  
+  .thumbnail {
+    margin: 0 0.3rem;
+  }
+  
+  .thumbnail img {
+    height: 80%;
+    width: 100%;
+  }
+  
+  .blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -20%;
+  }
+  
+  .blog .carousel-indicators:hover {
+    cursor: pointer;
+  }
+  
+  .blog .carousel-indicators li {
+    background: rgba(231, 231, 231, 0.3);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .blog .carousel-indicators .active {
+    background: var(--white-color);
+  }
+  
+  /* End of Section 2 */
