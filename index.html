@@ -1,272 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Angeles Mountains</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!-- Section 1 -->
-        <section class="section-1">
-            <a href="#" class="logo">
-                <img src="/img/logo.png" alt="mountain logo">
+    <div class="body">
+        <!--section 1-->
+        <div class="section-1">
+            <div class="navbar">
+                <div class="left">
+                    <a id="logo" href="logo.png">
+                        <img src="img/logo.png" />
+                    </a>
+                </div>
+                <div class="right">
+                    <a class="nav-Item" href="#his-section"><strong><em>01.history</em></strong></a>
+                    <a class="nav-Item" href="#climb-sec"><strong><em>02.teams</em></strong></a>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky nav-->
+        <div class="sticky-Nav">
+            <div class="left2">
+                <a class="logo2" href="logo2.png">
+                    <img src="img/Logo_wM.png" />
+                </a>
+            </div>
+            <div class="right2">
+                <a class="navItem2" href="#his-section"><strong><em>01.history</em></strong></a>
+                <a class="navItem2" href="#climb-sec"><strong><em>02.teams</em></strong></a>
+            </div>
+        </div>
+
+        <!--history section -->
+
+        <div class="history-section" id="his-section">
+            <div class="history">
+                <div class="history-img">
+                    <a class="numbers" href="">
+                        <img src="img/01history.png" />
+                    </a>
+                </div>
+                <div class="history-Text">
+                    <a class="history-tLorem">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+                        recusandae tempore asperiores in perspiciatis, nisi esse vero
+                        necessitatibus. Laborum magni aliquid mollitia. Totam eos quod
+                        hic, officiis magnam id quidem?
+                    </a>
+                </div>
+            </div>
+
+            <!--carousel-->
+            <div class="carousel-Background">
+                <div class="carousel-container">
+                    <div class="carousel-1" id="C-images">
+                        <img src="img/thumb1.png" class="img2" id="C1">
+                        <img src="img/thumb2.png" class="img2" id="C2"> 
+                        <img src="img/thumb1.png" class="img2" id="C3">
+                        <img src="img/thumb2.png" class="img2" id="C4">
+                    </div>
+                    <!-- <div class="carousel-2" id="C2">
+                        <a class="img1" href="">
+                            <img src="img/thumb1.png"></a>
+                        <a class="img2" href="">
+                            <img src="img/thumb2.png"></a>
+                        <a class="img1" href="">
+                            <img src="img/thumb1.png"></a>
+                        <a class="img2" href="">
+                            <img src="img/thumb2.png"></a>
+
+                    </div> -->
+                </div>
+                <div class="dot">
+                    <a class="dot1" id="dot-1" onclick="first()">-</a>
+                    <a class="dot2" id="dot-2" onclick="second()">-</a>
+                <script>
+                    var img_array=["img/thumb1.png","img/thumb2.png"]
+                    document.getElementById("dot-1").style.color="orange"
+                       document.getElementById("dot-2").style.color="white"
+                    function first(){
+                        document.getElementById("C1").src=img_array[0];
+                        document.getElementById("C2").src=img_array[1];
+                        document.getElementById("C3").src=img_array[0];
+                        document.getElementById("C4").src=img_array[1];
+                       document.getElementById("dot-1").style.color="orange"
+                       document.getElementById("dot-2").style.color="white"
+                    }
+                    function second(){
+                        document.getElementById("C1").src=img_array[1];
+                        document.getElementById("C2").src=img_array[0];
+                        document.getElementById("C3").src=img_array[1];
+                        document.getElementById("C4").src=img_array[0];
+                        document.getElementById("dot-1").style.color="white"
+                        document.getElementById("dot-2").style.color="orange"
+                    }
+                </script>
+                </div>
+            </div>
+        </div>
+
+        <!--climbsectin--->
+
+        <div class="climb-Section" id="climb-sec">
+            <div class="climb-items">
+                <div class="climb-Left">
+                    <a class="cImg" href="">
+                        <img src="img/02climb.png" />
+                    </a>
+                </div>
+                <div class="climb-Right">
+                    <a class="cText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+                        obcaecati odit veniam, expedita voluptatibus ipsa consequuntur
+                        eligendi optio harum vel culpa delectus libero nisi incidunt eum
+                        suscipit praesentium ab. Repudiandae.</a>
+                </div>
+            </div>
+        </div>
+
+        <!--buttons climb-->
+        <div class="buttons-Background">
+            <a class="schedule-png" href="">
+                <img src="img/SCHEDULE.png" />
             </a>
-            <nav class="navbar">
-                <a href="#history-section" class="navbar-link"><strong><em>01. History</em></strong></a>
-                <a href="#climb-section" class="navbar-link"><strong><em>02. Team</em></strong></a>
-            </nav>
-        </section>
-        <!-- End of Section 1 -->
-
-        <!-- Sticky Nav -->
-        <section class="sticky-nav">
-            <a href="#" class="logo2">
-                <img src="/img/Logo_wMountains.png" alt="mountain logo">
-            </a>
-            <nav class="navbar2">
-                <a href="#history-section" class="navbar-link2"><strong><em>01. History</em></strong></a>
-                <a href="#climb-section" class="navbar-link2"><strong><em>02. Team</em></strong></a>
-            </nav>
-        </section>
-        <!-- End of Sticky Nav -->
-
-        <!-- Section 2 -->
-        <section id="history-section" class="section-2">
-            <div class="history-text-section container-sm">
-                <div class="history">
-                    <img src="/img/01history.png" alt="" class="numbers">
-                </div>
-                <div class="history-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sint consequatur ducimus. Quis quasi, illum tempore aliquam blanditiis neque praesentium non! Modi dolor in non. Consectetur, vel laboriosam quod ipsam perspiciatis delectus nam adipisci eum accusantium suscipit dolores numquam animi necessitatibus molestias sequi similique blanditiis rem.
-                </div>
+            
+            <div class="buttons">
+                <a onclick="button1()" id="btn1" class="btns btn1">mountain1</button>
+                <a onclick="button2()" id="btn2" class="btns">mountain2</button>
             </div>
+        </div>
+        
+           <!--mountain js-->
+           <div class="bground">
+            <img src="img/tab1.png" id="bg-Image" class="bg-Image">
+            <script>
+                var img_ar=["img/tab1.png","img/tab2.png"]
+                 document.getElementById("btn1").style.color='#7a8cb0';
+                    document.getElementById("btn1").style.backgroundColor='white';
+                function button1()
+                {
+                    document.getElementById("bg-Image").src=img_ar[0];
+                    document.getElementById("btn1").style.color='#7a8cb0';
+                    document.getElementById("btn1").style.backgroundColor='white';
+                    document.getElementById("btn2").style.backgroundColor="#7a8cb0";
+                    document.getElementById("btn2").style.color="white"
+                }
+                function button2()
+                {
+                    document.getElementById("bg-Image").src=img_ar[1];
+                    document.getElementById("btn1").style.color="white";
+                    document.getElementById("btn1").style.backgroundColor='#7a8cb0';
+                    document.getElementById("btn2").style.color='#7a8cb0';
+                    document.getElementById("btn2").style.backgroundColor='white';
 
-            <div class="carousel-bg center">
-                <div class="thumb-container center">     
-                    <div>
-                 
-                        <div class="row blog">
-                        <div class="col-md-12">                        
-                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">                        
-                        <ol class="carousel-indicators">                        
-                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>                        
-                        <li data-target="#blogCarousel" data-slide-to="1"></li>                        
-                        <li data-target="#blogCarousel" data-slide-to="2"></li>                        
-                        </ol>
-                        
-                        <!-- Carousel items -->
-                        
-                        <div class="carousel-inner">                        
-                        <div class="carousel-item active">                        
-                        <div class="row">                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        </div>                        
-                        <!--.row-->
-                        
-                        </div>                        
-                        <!--.item-->                        
-                        <div class="carousel-item">                        
-                        <div class="row">                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>
-                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        </div>
-                        
-                        <!--.row-->
-                        
-                        </div>
-                        <div class="carousel-item">                        
-                        <div class="row">                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-1.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>
-                        
-                        <div class="col-md-3">                        
-                        <a href="#">                        
-                        <img src="/img/img-2.png" alt="Image" style="max-width:100%;">                        
-                        </a>                        
-                        </div>                        
-                        </div>
-                        
-                        <!--.row-->
-                        
-                        </div>
-                        
-                        <!--.item-->
-                        
-                        </div>
-                        
-                        <!--.carousel-inner-->
-                        
-                        </div>
-                        
-                        <!--.Carousel-->
-                        
-                        </div>                        
-                        </div>                        
-                        </div>
-                            
-                </div>
+                }
+
+            </script>
+            <img src="img/schedule-content.png" class="schedule">
+        </div>
+       
+
+        <!--footer-->
+        <div class="footer">
+            <div class="footer-Left">
+                <a class="footer-Img" href="">
+                    <img src="img/footerLogo.png" />
+                </a>
             </div>
-
-        </section>
-        <!-- End of Section 2 -->
-
-        <!-- Section 3 -->
-        <section id="climb-section" class="section-3">
-            <div class="climb-text-container">
-                <div class="climb-text-section container-sm">
-                    <div class="climb">
-                        <img src="/img/02climb.png" alt="" class="numbers">
-                    </div>
-                    <div class="climb-text center">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, libero quod illum eius porro ullam. Debitis quisquam incidunt autem rerum enim quia blanditiis delectus? Fuga.
-                    </div>
-                </div>
+            <div class="footer-right">
+                <a class="copyright-Img" href="">
+                    <img src="img/copy.png" />
+                </a>
             </div>
-
-            <div class="tab-container">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="mountain1-tab" data-bs-toggle="tab" data-bs-target="#mountain1" type="button" role="tab" aria-controls="mountain1" aria-selected="true">Mountain 1</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="mountain2-tab" data-bs-toggle="tab" data-bs-target="#mountain2" type="button" role="tab" aria-controls="mountain2" aria-selected="false">Mountain 2</button>
-                    </li>
-                  </ul>
-                </div>
-                  <div class="tab-content tab-bg1" id="myTabContent">
-                    <div class="tab-pane fade show active" id="mountain1" role="tabpanel" aria-labelledby="mountain1-tab">                        
-                            <div class="schedule-container">
-                                <img src="/img/schedule-content.png" alt="" class="schedule">
-                            </div>
-                    </div>
-                    <div class="tab-pane fade tab-bg2" id="mountain2" role="tabpanel" aria-labelledby="mountain2-tab">
-                        
-                            <div class="schedule-container">
-                                <img src="/img/schedule-content.png" alt="" class="schedule">
-                            </div>
-                
-                    </div>
-                        
-                    </div>
-
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                      <div class="accordion-item accordion-bg1">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            Mountain 1
-                          </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                          <div class="accordion-body center">
-                            <div class="schedule-container-accord">
-                              <img src="/img/schedule-content.png" alt="" class="schedule">
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item accordion-bg2">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            Mountain 2
-                          </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                          <div class="accordion-body">
-                            <div class="schedule-container-accord">
-                              <img src="/img/schedule-content.png" alt="" class="schedule">
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <footer class="footer">
-                        <div class="footer-logo">
-                            <img src="/img/footerLogo.png" alt="">
-                        </div>
-  
-                        <div class="copy">
-                            <img src="/img/copy.png" alt="">
-                        </div>
-                    </footer>
-
-                  </div>
-                  
-        </section>
-
-        <!-- End of Section 3 -->
-
-    </div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+        </div>
+</div>
+    
 </body>
+
 </html>
